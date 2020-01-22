@@ -1,0 +1,13 @@
+server:
+  port: 9093
+
+#向eureka的server注册服务
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka
+
+#当前服务起名称
+spring:
+  application:
+    name: service-client

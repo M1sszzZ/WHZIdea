@@ -1,0 +1,29 @@
+server:
+  port: 9898
+
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  application:
+    name: zuul
+
+#查看默认的路由规则
+management:
+    security:
+      enabled: false
+
+
+zuul:
+  routes:
+    aa:     #这里是zuul的规则名称
+      path: /u/**  #转发路径
+      serviceId: user  #使用上边配置路径访问的服务
+    bb:
+      path: /o/**
+      serviceId: order
+

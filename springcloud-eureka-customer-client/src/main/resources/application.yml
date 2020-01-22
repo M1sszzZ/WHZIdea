@@ -1,0 +1,16 @@
+server:
+  port: 9999
+#注册eureka
+eureka:
+  client:
+    service-url:
+      #defaultZone: http://127.0.0.1:8989/eureka,http://127.0.0.1:8990/eureka,http://127.0.0.1:8991/eureka/
+      defaultZone: http://127.0.0.1:8888/eureka/
+
+spring:
+  application:
+    name: consumer-client
+#设置某一个服务的负载均衡
+#HELLO-SERVICE:
+  #ribbon:
+    #NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

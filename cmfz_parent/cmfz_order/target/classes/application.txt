@@ -1,0 +1,26 @@
+server:
+  port: 9999
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+
+
+
+spring:
+  application:
+    name: order
+  datasource:
+    type: org.apache.commons.dbcp.BasicDataSource
+    url: jdbc:mysql://localhost:3306/springcloud
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+
+
+
+mybatis:
+  type-aliases-package: com.baizhiedu.entity
+  mapper-locations: classpath:com/baizhi/mapper/*.xml

@@ -1,0 +1,10 @@
+# 开启去统一配置中心获取
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG
+      profile: aa
+      name: order
+      label: master

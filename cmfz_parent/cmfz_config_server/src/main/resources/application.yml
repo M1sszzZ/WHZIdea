@@ -1,0 +1,28 @@
+server:
+  port: 9090
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+
+
+spring:
+  application:
+    name: config
+  cloud:   #配置远端的git仓库
+    config:
+      server:
+        git:
+          uri: https://gitee.com/chenyn-java/cmfz_config.git
+
+
+
+
+
+
+
+
+
