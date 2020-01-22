@@ -16,7 +16,7 @@ spring:
     config:
       server:
         git:
-          uri: https://gitee.com/chenyn-java/cmfz_config.git
+          uri: https://github.com/M1sszzZ/WHZIdea.git
 
 
 
